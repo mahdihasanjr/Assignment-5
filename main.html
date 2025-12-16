@@ -53,7 +53,7 @@
                         <input type="checkbox" checked class="size-4 accent-blue-600">
                      </div>
 
-                     <p class="font-medium text-[rgba(0,48,60,0.7)]">Task Assigned <span class="text-[rgba(0,48,60,1)] font-bold text-xl block">05</span></p>
+                     <p class="font-medium text-[rgba(0,48,60,0.7)]">Task Assigned <span  id="task-assigned"  class="text-[rgba(0,48,60,1)] font-bold text-xl block">6</span></p>
 
                 </div>
                     
@@ -84,7 +84,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
                 
                 <!-- card 1 -->
-                 <div class="card bg-[rgba(55,82,253,0.1)] p-4 gap-4 ">
+                 <div class="card bg-[rgba(55,82,253,0.1)]  p-4 gap-4 ">
 
                     <div class="flex justify-start ">
                         <button class="btn rounded-lg ">ShopEase</button>
@@ -104,7 +104,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button  class="btn bg-blue-600 text-white rounded-lg completed-btn disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
 
@@ -129,7 +129,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
 
@@ -154,7 +154,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
 
@@ -179,7 +179,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
 
@@ -204,7 +204,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
 
@@ -229,14 +229,14 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn bg-blue-600 text-white rounded-lg">Completed</button>
+                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
             </div>
         </section>
 
         <!-- clear history box -->
-        <section class="lg:min-h-screen bg-white p-5 rounded-lg flex flex-col items-center ">
+        <section class="lg:min-h-screen bg-white py-6 px-4 rounded-lg flex flex-col items-center ">
 
             <div class="flex items-center gap-2 mb-2">
                 <img class="size-4" src="./assets/activity.png" alt="">
@@ -251,5 +251,8 @@
             </div>
         </section>
       </main>
+
+      <script src="./script/utilitiy.js"></script>
+      <script src="./script/complete-btn.js"></script>
 </body>
 </html>
