@@ -26,15 +26,19 @@ for(const btn of allBtn){
 
             // history ;
             const historyBox = document.getElementById('history-box');
-            const historyP = document.createElement('div');
+            const historyP = document.createElement('p');
             historyP.classList.add('history-design')
             historyP.innerText=`you have completed the ${headBtn} at ${new Date().toLocaleTimeString()}`
             historyBox.appendChild(historyP);
-
-
-
-                
-
+            
         }
     )
 }
+
+
+// click the btn and show blog page;
+document.getElementById('calender').addEventListener('click',
+    function(){
+        window.location.href='./blog.html'
+    }
+)

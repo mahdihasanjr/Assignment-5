@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+       <!-- DaisyUi cdn -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-[rgba(55,82,253,0.1)]">
+    
+     <!-- header part -->
+     <header class="container mx-auto py-4 px-4 md:px-0 lg:px-4 xl:px-12">
+        <nav class="bg-white flex items-center justify-between rounded-xl p-4">
+            <!-- logo -->
+            <div class="flex items-center gap-2">
+                <img class="size-6 lg:size-8" src="./assets/logo.png" alt="">
+                <h2 class="text-2xl">Dev <span class="font-bold"> Board</span></h2>
+            </div>
+            <!-- number and btn -->
+            
+                <button id="back-to-desk-btn" class="btn  bg-blue-700 p-3 rounded-lg text-white">
+                    Back to Desk
+                </button>
+                
+             </div>
+        </nav>
+     </header>
+
+     <!-- blogs section-->
+      <section>
+        <h1 class="text-center text-3xl font-bold">Blogs</h1>
+
+        <div class="container mx-auto py-6 px-4 xl:px-12 space-y-5">
+
+            <!-- question 1 -->
+            <div class="p-4 bg-white rounded-md">
+                <h2 class="font-semibold">
+                    Question-1: What are the different ways to select an element in the DOM?
+                </h2>
+
+                <hr class="w-full border-dashed border-gray-300 my-4">
+
+                <p class="text-gray-500">
+                    5 Method <br>
+                   1 : getElementById 
+                   2 : getElementsByClassName 
+                   3 : getElementsByTagName 
+                   4 : querySelectorAll 
+                   5 : querySelector 
+                </p>
+
+            </div>
+            <!-- question 2 -->
+            <div class="p-4 bg-white rounded-md">
+                <h2 class="font-semibold">
+                    Question-2: What is the difference between innerHTML, innerText, and textContent ?
+                </h2>
+
+                <hr class="w-full border-dashed border-gray-300 my-4">
+
+                <p class="text-gray-500">
+                   <span class="font-bold text-black">innerHTML</span> 
+                    একটি element এর ভেতরের HTML ট্যাগসহ সম্পূর্ণ কনটেন্ট দেখায় বা সেট করে।
+
+                    <span class="font-bold text-black">innerText</span>
+                    একটি element এর ভেতরের শুধু দৃশ্যমান (visible) টেক্সট দেখায়।
+                    CSS দিয়ে hidden করা লেখা দেখায় না।
+
+                    <span class="font-bold text-black">textContent</span>
+                    একটি element এর ভেতরের সব টেক্সট দেখায়,
+                    HTML ট্যাগ ও CSS ignore করে।
+                </p>
+
+            </div>
+            <!-- question3 -->
+            <div class="p-4 bg-white rounded-md">
+                <h2 class="font-semibold">
+                    Question-3: What is event delegation in the DOM?
+                </h2>
+
+                <hr class="w-full border-dashed border-gray-300 my-4">
+
+                <p class="text-gray-500">
+                    Event Delegation হলো এমন একটি পদ্ধতি যেখানে
+                    👉 child element-এ আলাদা আলাদা event listener না দিয়ে, parent element-এ একটি event listener দেওয়া হয়,
+                    এবং event bubbling ব্যবহার করে child element-এর event handle করা হয়।
+                     
+                </p>
+
+            </div>
+            <!-- question 4 -->
+            <div class="p-4 bg-white rounded-md">
+                <h2 class="font-semibold">
+                  Question-4: What is event bubbling in the DOM?
+                </h2>
+
+                <hr class="w-full border-dashed border-gray-300 my-4">
+
+                <p class="text-gray-500">
+                  Event Bubbling হলো browser-এর একটি default behavior যেখানে—
+                    👉 কোনো event (যেমন click) child element থেকে শুরু হয়ে ধাপে ধাপে parent element গুলোর দিকে উপরে উঠতে থাকে।
+                </p>
+
+            </div>
+            <!-- question5  -->
+            <div class="p-4 bg-white rounded-md">
+                <h2 class="font-semibold">
+                   Question-5: How do you create, add, and remove elements using JavaScript?
+                </h2>
+
+                <hr class="w-full border-dashed border-gray-300 my-4">
+
+                <p class="text-gray-500">
+                    <span class="font-bold">Create:</span> document.createElement(),innerText → element-এর ভিতরে লেখা যোগ করে
+                <span class="font-bold">Add:</span> appendChild() / append()
+                <span class="font-bold">Remove:</span> remove() / removeChild()
+                </p>
+
+            </div>
+        </div>
+      </section>
+
+      <script src="./script/blog.js"></script>
+</body>
+</html>
