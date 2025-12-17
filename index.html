@@ -9,6 +9,9 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+<!-- link up css -->
+ <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body class="bg-[rgba(55,82,253,0.1)]">
@@ -24,9 +27,9 @@
             </div>
             <!-- number and btn -->
              <div class="flex items-center gap-6">
-                <label class="text-xl font-bold bg-gray-100 px-3 py-1 rounded-full" >
+                <label id="board-number" class="text-xl font-bold bg-gray-100 px-3 py-1 rounded-full" >
                     <input type="checkbox" checked="checked" class=" accent-blue-600 size-4">
-                    23
+                   <span id="history-box">23</span>
                 </label>
                 <button class="size-6 lg:size-8 bg-gray-100 p-1 rounded-full">
                     <img  src="./assets/theme-btn.png" alt="">
@@ -90,7 +93,7 @@
                         <button class="btn rounded-lg ">ShopEase</button>
                     </div>
   
-                    <h2 class="card-title text-xl text-[#00303C]">
+                    <h2 id="head-btn" class="card-title text-xl text-[#00303C]">
                         Fix Mobile Button Issue 
                     </h2>
 
@@ -116,7 +119,7 @@
                     </div>
   
                     <h2 class="card-title text-xl text-[#00303C]">
-                        Fix Mobile Button Issue 
+                        Add Dark Mode 
                     </h2>
                     
                     <p title=" A card component has a figure, a body part, and inside body there are title and actions parts
@@ -141,7 +144,7 @@
                     </div>
   
                     <h2 class="card-title text-xl text-[#00303C]">
-                        Fix Mobile Button Issue 
+                        Optimize  Home page  
                     </h2>
                     
                     <p title=" A card component has a figure, a body part, and inside body there are title and actions parts
@@ -166,7 +169,7 @@
                     </div>
   
                     <h2 class="card-title text-xl text-[#00303C]">
-                        Fix Mobile Button Issue 
+                        Add new emoji 🤲
                     </h2>
                     
                     <p title=" A card component has a figure, a body part, and inside body there are title and actions parts
@@ -191,7 +194,7 @@
                     </div>
   
                     <h2 class="card-title text-xl text-[#00303C]">
-                        Fix Mobile Button Issue 
+                        Integrate OpenAI API  
                     </h2>
                     
                     <p title=" A card component has a figure, a body part, and inside body there are title and actions parts
@@ -216,7 +219,7 @@
                     </div>
   
                     <h2 class="card-title text-xl text-[#00303C]">
-                        Fix Mobile Button Issue 
+                        Improve Job searching  
                     </h2>
                     
                     <p title=" A card component has a figure, a body part, and inside body there are title and actions parts
@@ -236,18 +239,18 @@
         </section>
 
         <!-- clear history box -->
-        <section class="lg:min-h-screen bg-white py-6 px-4 rounded-lg flex flex-col items-center ">
+        <section class=" bg-white py-6 px-3 rounded-lg flex flex-col items-center">
 
             <div class="flex items-center gap-2 mb-2">
                 <img class="size-4" src="./assets/activity.png" alt="">
                 <p class="text-center">Activity Log</p>
             </div>
-            <div class="mb-3">
+            <div class="mb-4">
                 <button class="btn bg-blue-600 text-white rounded-lg">Clear History</button>
             </div>
-            <hr class=" size-full border-dashed border-gray-300">
+            <hr class="w-full h-4 border-dashed border-gray-300">
             <div id="history-box">
-
+                
             </div>
         </section>
       </main>
