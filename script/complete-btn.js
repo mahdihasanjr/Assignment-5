@@ -42,3 +42,17 @@ document.getElementById('calender').addEventListener('click',
         window.location.href='./blog.html'
     }
 )
+
+// update date;
+window.addEventListener('load',function(){
+    const updateDate = document.getElementById('update-date');
+    updateDate.innerText = new Date().toDateString()
+   
+})
+
+// last btn ;
+document.getElementById('last-btn').addEventListener('click',
+    function(){
+        alert('Congrates!!! You have completed all the current task')
+    }
+)
