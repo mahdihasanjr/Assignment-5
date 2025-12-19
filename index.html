@@ -27,11 +27,11 @@
             </div>
             <!-- number and btn -->
              <div class="flex items-center gap-6">
-                <label id="board-number" class="text-xl font-bold bg-gray-100 px-3 py-1 rounded-full" >
+                <label  class="text-xl font-bold bg-gray-100 px-3 py-1 rounded-full" >
                     <input type="checkbox" checked="checked" class=" accent-blue-600 size-4">
-                   <span id="history-box">23</span>
+                   <span id="board-number">23</span>
                 </label>
-                <button class="size-6 lg:size-8 bg-gray-100 p-1 rounded-full">
+                <button id="theme-btn" class="size-8 bg-gray-100 p-1 rounded-full">
                     <img  src="./assets/theme-btn.png" alt="">
                 </button>
                 
@@ -77,7 +77,7 @@
                         <img class="size-6" src="./assets/calender.png" alt="">
                      </div>
 
-                     <p id="date" class="font-medium text-[rgba(0,48,60,0.7)]">Monday,<span class="text-[rgba(0,48,60,1)] font-bold text-lg block">Dec 15 2025</span></p>
+                     <p id="update-date"  class="font-medium text-[rgba(0,48,60,0.7)]">Monday,<span class="text-[rgba(0,48,60,1)] font-bold text-lg block">Dec 15 2025</span></p>
 
                 </div>
             </header>
@@ -232,7 +232,7 @@
                         <p class="text-sm text-[#00303C]">Deadline 
                             <span class="block text-base font-medium">21 March 2025</span>
                         </p>
-                        <button class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
+                        <button id="last-btn" class="btn completed-btn bg-blue-600 text-white rounded-lg disabled:bg-gray-300">Completed</button>
                     </div>        
                 </div>
             </div>
@@ -259,5 +259,6 @@
       <script src="./script/utilitiy.js"></script>
       <script src="./script/complete-btn.js"></script>
       <script src="./script/clear-history.js"></script>
+      <script src="./script/bodyColor.js"></script>
 </body>
 </html>
